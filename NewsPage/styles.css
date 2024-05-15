@@ -1,0 +1,188 @@
+.hover-button {
+    position: fixed;
+    top: 20px; /* Adjust top position as needed */
+    left: 20px; /* Adjust left position as needed */
+    background-color: #ff6600; /* Match theme color */
+    border: none;
+    color: #fff; /* White text */
+    padding: 12px 24px; /* Slightly smaller padding */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 2px solid transparent; /* Add border */
+}
+
+.hover-button:hover {
+    background-color: #beb6b0; /* Darker theme color */
+    border-color: #9b928d; /* Match button background color on hover */
+}
+
+
+
+.hover-button {
+    position: fixed;
+    top: 1px; /* Adjust top position as needed */
+    left: 1760px; /* Adjust left position as needed */
+    background-color: #ffffff; /* Match theme color */
+    border: none;
+    color: #000000; /* White text */
+    padding: 12px 24px; /* Slightly smaller padding */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 2px solid black; /* Add border */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Disable horizontal scrolling */
+}
+
+.container {
+    max-width: 50vw; /* 80% of viewport width */
+    height: auto; /* 80% of viewport height */
+    margin: 10vh auto; /* Center vertically */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+    position: relative; /* Required for overlay positioning */
+}
+
+.container:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    transition: color 0.3s ease-in-out;
+}
+
+h1:hover {
+    color: #ff6600;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin-bottom: 20px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.content-box {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.content-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.content-box:hover {
+    transform: scale(1.05);
+}
+
+.content-box:hover img {
+    transform: scale(1.05);
+}
+
+.content-box p {
+    color: #666;
+    line-height: 1.6;
+    margin-top: 0;
+}
+
+/* Popup styles */
+.popup {
+    display: none; /* Hide the popup by default */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    width: 80vw; /* 80% of the viewport width */
+    height: 80vh; /* 80% of the viewport height */
+    border-radius: 20px; /* Increased border radius for smoother edges */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    z-index: 9999; /* Make sure popup is on top */
+    max-width: 90%; /* Adjust max width as needed */
+    max-height: 90%; /* Adjust max height as needed */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.popup-content {
+    text-align: center;
+}
+
+/* Overlay styles */
+.overlay {
+    display: none; /* Hide the overlay by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    z-index: 999; /* Make sure overlay is below popup */
+    backdrop-filter: blur(5px); /* Add blur effect to background */
+}
+
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Styling the container */
+.pcontainer {
+    border: solid grey;
+    text-align: center;
+    background-color: #ffffff; /* Background color */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+    margin: 20px; /* Margin to provide space between other elements */
+}
+
+/* Styling the paragraph elements inside the container */
+.pcontainer p {
+    font-size: 16px; /* Font size */
+    line-height: 1.5; /* Line height for better readability */
+    color: #000000; /* Text color */
+}
