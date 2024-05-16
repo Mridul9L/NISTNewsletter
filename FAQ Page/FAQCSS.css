@@ -1,0 +1,80 @@
+/* Set page background color */
+body  {
+    background-color: #eae2b7; /* light yellow */
+    color: #003049; /* dark blue */
+  }
+  
+  /* Center container */
+  .container {
+    max-width: 75vw; /* Adjust max-width as needed */
+    margin: 0 auto; /* Center horizontally */
+    padding: 15px;
+    border: solid #f1edd3 1px;
+    background-color: #f1edd3;
+    border-radius: 20px;
+  }
+  
+  /* Style the accordion buttons */
+  .accordion {
+    background-color: #003049; /* dark blue */
+    color: #eae2b7; /* light yellow */
+    cursor: pointer;
+    padding: 50px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: .5s;
+    display: block;
+    margin-bottom: 10px; /* Add space between buttons */
+    font-size: 200%;
+    border-radius: 20px;
+  }
+  
+  /* Style the accordion buttons when active (pressed) */
+  .active, .accordion:hover {
+    background-color: #d62828; /* light orange */
+  }
+  
+  /* Style the accordion panel */
+  .panel {
+    padding: 0 18px;
+    background-color: #fcbf49; /* light orange */
+    display: none;
+    overflow: hidden;
+    font-size: 150%;
+    border: none;
+    border-radius: 20px;
+    margin: 10px;
+  }
+  
+  /* Style the panel content */
+  .panel p {
+    margin: 0;
+    color: #003049; /* dark blue */
+    text-align: center;
+    
+  
+  }
+  
+  /* Show the panel when the accordion button is clicked */
+  .active + .panel {
+    display: block;
+  }
+  #headofpage{
+    text-align: center;
+    font-size: 7vw;
+    
+  }
+  .topnav{
+   text-align: center;
+  }
+  #FAQFull{
+    text-align: center;
+    font-size: 4vw;
+  }
+  #top-link{
+    border:  solid #fcbf49 3px ;
+    border-radius: 20px;
+    background-color: #fcbf49;
+  }
