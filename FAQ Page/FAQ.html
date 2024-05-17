@@ -2,70 +2,68 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="FAQCSS.css">
-<script src="FAQ.js" defer></script>
-<link rel="stylesheet" href="">
+<style>
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+</style>
+<link rel="stylesheet" href="FAQcss.css">
 </head>
 <body>
-  
-    <div class="topnav">
-      <a href="index.html">Home</a>
-      <a href="news.html">News</a>
-      <a href="Our Teams.html">Our Teams</a>
-      <a href="FAQ.html">FAQ</a>
-    </div>
-    <div class="container">
-    <h1 id="headofpage">FAQ</h1>
-    <h1 id="FAQFull">Frequently Asked Questions</h1>
-
-    <button class="accordion">What is the purpose of the newsletter project?</button>
-    <div class="panel">
-      <p>The purpose of the newsletter project is to showcase the collaborative work of Grade 9 students from NIST International School across six different teams.
-      </p>
-    </div>
-
-    <button class="accordion">How were the teams formed for the newsletter project?</button>
-    <div class="panel">
-      <p>The teams were formed based on common interests and skills, ensuring a diverse range of perspectives and talents in each group.</p>
-    </div>
-
-    <button class="accordion">What topics were covered in the newsletter?</button>
-    <div class="panel">
-      <p>The newsletter covers a wide range of topics, including but not limited to: school events, student achievements, community initiatives, academic updates, and creative endeavors.</p>
-    </div>
-    <button class="accordion">How did the teams collaborate on the newsletter project?</button>
-    <div class="panel">
-      <p>The teams collaborated through regular meetings, brainstorming sessions, sharing of ideas and resources, and dividing tasks based on individual strengths and interests.
-      </p>
-    </div>
-
-    <button class="accordion">How were the teams formed for the newsletter project?</button>
-    <div class="panel">
-      <p>The teams were formed based on common interests and skills, ensuring a diverse range of perspectives and talents in each group.</p>
-    </div>
-
-    <button class="accordion">What topics were covered in the newsletter?</button>
-    <div class="panel">
-      <p>The newsletter covers a wide range of topics, including but not limited to: school events, student achievements, community initiatives, academic updates, and creative endeavors.</p>
-    </div>
+  <div class="topnav">
+    <a class="active" href="#home">Home</a>
+    <a href="news.html">News</a>
+    <a href="Our Teams.html">Our Teams</a>
+    <a href="FAQ.html">FAQ</a>
   </div>
-  <div>
-    <a href="#top" id="top-link">To the top</a>
-  </div>
-  
-  <script>
-    // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function() {scrollFunction()};
 
-    function scrollFunction() {
-      var topLink = document.getElementById("top-link");
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        topLink.style.display = "block";
-      } else {
-        topLink.style.display = "none";
-      }
+<h1>FAQ</h1>
+<button class="accordion">Who are you guys?</button>
+<div class="panel">
+  <p>We are Grade 9 of Bhaktapur NIST School who are divided into groups to create newsletters<br>
+  according to the events happening in the school.</p>
+</div>
+
+<button class="accordion">What inspired you guys to do the work?</button>
+<div class="panel">
+<P>Our greatest insipiration was our dear teacher,Deepa Tamang who encouraged us all to have teamwork and to develop our<br>
+greatest minds.She also gives us marks according to the work done by each person.</P>
+
+<button class="accordion">What are the teams?</button>
+<div class="panel">
+<p>There are six teams which are all helping to write the newsletters.The teams include <a href='file:///C:/Users/r/Downloads/Developers.html'>Developers team</a>,<a href='file:///C:/Users/r/Downloads/Content%20Writing.html'>Content writing team</a>,<a href='file:///C:/Users/r/Downloads/Research.html'>Research Team</a>,<a href="file:///C:/Users/r/Downloads/Editors.html">Editors Team</a>,<a href='file:///C:/Users/r/Downloads/Documentation.html'>Documentation team</a>,<a href="file:///C:/Users/r/Downloads/Photography.html">Photography Team</a></p>
+</div>
+
+<button class="accordion">Why are you guys doing this?</button>
+<div class="panel">
+  <p>We are doing this project to develop oyr great minds and to develop teamwork and lateral thinking.</p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
     }
-  </script></div>
-  
+  });
+}
+</script>
+
 </body>
 </html>
