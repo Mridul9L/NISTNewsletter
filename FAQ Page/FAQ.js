@@ -1,27 +1,39 @@
-// Get all the accordion buttons
-var acc = document.querySelectorAll(".accordion");
+// FAQ.js
 
-// Loop through the accordion buttons and add click event listeners
-acc.forEach(function(item) {
-  item.addEventListener("click", function() {
-    var panel = this.nextElementSibling;
+document.addEventListener('DOMContentLoaded', function () {
+  const accordions = document.querySelectorAll('.accordion');
+  let activeAccordion = null;
 
-    // Close all panels except the one associated with the clicked button
-    acc.forEach(function(el) {
-      if (el !== item) {
-        el.classList.remove("active");
-        el.nextElementSibling.style.display = "none";
+  accordions.forEach(accordion => {
+    accordion.addEventListener('click', function () {
+      const panel = this.nextElementSibling;
+
+      if (activeAccordion && activeAccordion !== this) {
+        activeAccordion.classList.remove('active');
+        activeAccordion.nextElementSibling.classList.remove('show');
+        activeAccordion.nextElementSibling.style.maxHeight = null;
       }
+
+      this.classList.toggle('active');
+      panel.classList.toggle('show');
+
+      if (panel.classList.contains('show')) {
+        panel.style.maxHeight = panel.scrollHeight + 'px';
+      } else {
+        panel.style.maxHeight = null;
+      }
+
+      activeAccordion = this.classList.contains('active') ? this : null;
     });
+  });
 
-    // Toggle active class to highlight the clicked button
-    item.classList.toggle("active");
-
-    // If the panel is currently displayed, hide it; otherwise, display it
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
+  // Close the accordion when clicking outside
+  document.addEventListener('click', function (e) {
+    if (!e.target.classList.contains('accordion') && activeAccordion) {
+      activeAccordion.classList.remove('active');
+      activeAccordion.nextElementSibling.classList.remove('show');
+      activeAccordion.nextElementSibling.style.maxHeight = null;
+      activeAccordion = null;
     }
   });
 });
