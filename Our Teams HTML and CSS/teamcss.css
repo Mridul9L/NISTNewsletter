@@ -9,7 +9,7 @@ body {
   .teams {float: left;
 width: 100px; padding:50px ; margin: 10px; 
 } 
-.row::after {clear: both;
+.clearfix::after {clear: both;
 display: grid;
 }
 div.teams { background-color: #14213D ; color: white; background-repeat: no-repeat;
