@@ -1,22 +1,32 @@
  @import url(https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap%27);
 
-#title1 {color:white; text-align: center; background-color: #0A111F;
-border-radius: 20px; }
+#title1 {color:white;
+         text-align: center;
+         background-color: #0A111F;
+       border-radius: 20px;
+}
 body {
     margin:0 ;
-    
+background-color: #E5E5E5;    
 }
   .teams {float: left;
-width: 100px; padding:50px ; margin: 10px; 
+width: 100px;
+          padding:50px ;
+          margin: 10px; 
 } 
-.clearfix::after {clear: both;
+.clearfix::after {content:"";
+                  clear: both;
 display: grid;
 }
-div.teams { background-color: #14213D ; color: white; background-repeat: no-repeat;
-border:solid black 3px ; margin-bottom: 20px; width: 300px;
-b;
+div.teams { background-color: #14213D ; 
+           color: white; 
+           background-repeat: no-repeat;
+border:solid black 3px ;
+           margin-bottom: 20px;
+           width: 300px;
 }
-.topnav {background-color: #14213D;
+.topnav {
+ background-color: #14213D;
 overflow: hidden;
 }
 .topnav a {float: left;
@@ -27,13 +37,17 @@ padding:14px 16px ;
 text-decoration: none;
 transition: 1s;
 }
-.topnav a:hover {background-color: #E5E5E5;
+.topnav a:hover {
+ background-color: #E5E5E5;
 color: black;
 }
- a:hover {background-color:black ; }
-body {background-color: #E5E5E5;}
+ a:hover {
+  background-color:black ;
+ }
 html{border:#0A111F 5px solid}
 .teams a {
-    border: solid #14213D 2px; padding: 3px;
-transition: 1s; color:white;
+    border: solid #14213D 2px;
+ padding: 3px;
+transition: 1s;
+ color:white;
 }
