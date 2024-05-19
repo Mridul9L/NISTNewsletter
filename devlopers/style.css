@@ -1,0 +1,97 @@
+.topnav ul{
+    background-color: #003049;
+    padding: 0 px;
+    margin: 0 px;
+    list-style-type: none;
+    overflow: hidden;
+    
+
+    
+}
+.topnav a{
+    color:white;
+    text-decoration: none;
+    display:block;
+    padding:15px;
+    display:block;
+    text-align: center;
+    font-family: "Roboto", sans-serif; 
+    font-weight: 800;
+    font-size: 150%;
+    transition:0.5s
+}
+
+.topnav a:hover{
+    border:#003049;
+        background:linear-gradient(45deg,#eae2b7,#02121b,#003049,#d62828,#f77f00,#ffb624,#fcbf49);
+        background-size: 500%  600%;
+        animation: color 0.5s ease-in-out infinite
+         background-position: 0 50%;
+         font-size: 200% ;
+    border-radius: 10px ;
+    margin-bottom: 6%;
+    margin-top:6%;
+    margin-right: 6%;
+}
+@keyframes color{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+    }
+}
+
+.topnav li {
+    float:left
+}
+
+body{
+    margin:-2px
+}
+
+body{
+    border: #003049;
+}
+
+.member{
+    color:white;
+    font-family: "Roboto", sans-serif; 
+    font-size: 350% ;
+    padding:15px;
+    display:block;
+    text-align: center;
+    
+}
+
+
+
+body{
+    background:linear-gradient(45deg,#02121b,#003049,#d62828,#f77f00,#ffb624,#fcbf49,#eae2b7);
+    background-size: 300% 300%;
+    animation: color 15s ease-in-out infinite;
+
+}
+    
+@keyframes color{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+h1  {
+    border-style:solid;
+    border-radius: 10px ;
+    margin-left: 15%; 
+    margin-right: 20%;
+                                                                        
+
+}
