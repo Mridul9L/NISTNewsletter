@@ -3,65 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
     
+    <link rel="stylesheet" href="styles.css">
     <title>Newsletter</title>
 </head>
 <body>
-    <header><div class="topnav">
-        <img src="https://placehold.co/100" alt="Logo">
-        <a href="index.html">Home</a>
-        <a href="newsletter.html">News</a>
-        <a href="FAQ.html">FAQ</a>
-        <a href="teampage.html">Our Teams</a>
-    </div></header>
+    <header>
+        <div class="topnav">
+            <img src="https://placehold.co/100" alt="Logo">
+            <a href="index.html">Home</a>
+            <a href="newsletter.html">News</a>
+            <a href="FAQ.html">FAQ</a>
+            <a href="teampage.html">Our Teams</a>
+        </div>
+    </header>
     
     <div class="content-wrapper">
-
-        <h1>
-            Home
-        </h1>
+        <h1>Home</h1>
         
         <div class="latest-news">
             <h2>Latest News</h2>
-            <table>
-                <tr>
-                    <td><img src="https://placehold.co/600x400/000000/E5E5E5/png" alt="News Image"></td>
-                    <td>
+            <div class="news-container">
+                <div class="news-box">
+                    <div class="news-image">
+                        <img src="https://placehold.co/600x400" alt="News Image">
+                    </div>
+                    <div class="news-details">
                         <h3>Headline</h3>
                         <p class="shortdesc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia consequuntur pariatur dolor eius, minima officiis quos, sint ullam quisquam, asperiores nostrum quibusdam sunt accusantium tempora totam iure ipsum cupiditate maxime</p>
                         <a href="news.html" id="readmorebutton">Read More</a>
-                    </td>
-                </tr>
-            </table>
+                    </div>
+                </div>
+            </div>
         </div>
         <a class="back-to-top" href="#top">↑</a>
-
     </div>
-    <!-- Add this modal container after the existing content -->
-
-
     
     <div class="footer">
         <footer>
-            <table><!-- Made for Aligning -->
-                <tr>
-                    <td><iframe id="MapOfSchool" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14132.817311519248!2d85.36216!3d27.680079!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1a196eed5773%3A0x444d461aa73088be!2sNIST%20SCHOOL!5e0!3m2!1sen!2snp!4v1715955392902!5m2!1sen!2snp" width="500" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td>
-                    <td>
-                        <p >&copy; Grade 9 Lumbini and Muktinath, NIST School Bhaktapur, Lokanthali-1, Madhyapur Thimi Municipality, Bhaktapur, Bagmati Province, Nepal, Asia, Earth, Solar System, Milky Way Galaxy, The Observable Universe, The Universe</p>
-                    </td>
-                    <td>
-                        <div class="footerpages">
-                            <a href="index.html">Home</a>
-                            <a href="news.html">News</a>
-                            <a href="FAQ.html">FAQ</a>
-                            <a href="teampage.html">Our Teams</a>
-                            <a href="https://www.nistschool.edu.np">About NIST</a>
-                        </div>
-                    </td>
-                </tr>
-            </table>
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; Grade 9 Lumbini and Muktinath, NIST School Bhaktapur, Lokanthali-1, Madhyapur Thimi Municipality, Bhaktapur, Bagmati Province, Nepal, Asia, Earth, Solar System, Milky Way Galaxy, The Observable Universe, The Universe</p>
+                </div>
+                <div class="footer-map">
+                    <iframe id="MapOfSchool" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14132.817311519248!2d85.36216!3d27.680079!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1a196eed5773%3A0x444d461aa73088be!2sNIST%20SCHOOL!5e0!3m2!1sen!2snp!4v1715955392902!5m2!1sen!2snp" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="footerpages">
+                <a href="index.html">Home</a>
+                <a href="news.html">News</a>
+                <a href="FAQ.html">FAQ</a>
+                <a href="teampage.html">Our Teams</a>
+                <a href="https://www.nistschool.edu.np">About NIST</a>
+            </div>
         </footer>
     </div>
 </body>
